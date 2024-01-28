@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Moneda Nacional</title>
+ <link rel="stylesheet" href="assets/css/styles.css">
+  <script
+            src="https://kit.fontawesome.com/f4fd55b42a.js"
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main>
+            <h1>Conversor de Moneda Nacional</h1>
+            <div class="card">
+                <form id="conversor" class="box">
+                    <h2>Pesos CLP </h2>
+                    <input
+                        type="text"
+                        name="value"
+                        placeholder="Ingrese el monto en CLP" />
+                    <h4>Moneda a convertir</h4>
+                    <select name="coin">S
+                        <option value="">Seleccione moneda</option>
+                        <option value="dolar">Dolar</option>
+                        <option value="utm">UTM</option>
+                        <option value="uf">UF</option>
+                    </select>
+                    <div class="container">
+                        <button type="submit" class="search">Buscar</button>
+                        <i class="fa-solid fa-arrows-rotate" id="actualizar"></i>
+                        <article class="change">
+                            <h3 id="totalValor">Resultado: $</h3>
+                        </article>
+                    </div>
+                </form>
+            </div>
+
+            <section class="graphic">
+                <canvas id="myChart"></canvas>
+                <div id="actualizar"></div>
+            </section>
+        </main>
+        <!-- scripts -->
+        <script src="assets/js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </body>
+</html>
