@@ -31,7 +31,7 @@ const obteinValues = (datos) => {
     return datos.map((item) => item.valor);
 };
 
-// Obtein dates
+
 const obteinDates = (datos) => {
     return datos.slice(0, 10).map(
         (item) => new Date(item.fecha).toLocaleDateString("en-US") 
@@ -52,7 +52,7 @@ const calculateCoinsValue = async (valor, moneda) => {
 };
 
 
-const showGraphic = (datos, valor) => {
+const showGraphic = (datos, valor) => {     //forma diferente de mostrar grafico 
     const total = calculateCoinsTotal(valor, datos);
     showResults(total);
 
@@ -77,8 +77,8 @@ const showGraphic = (datos, valor) => {
 
     charter.style.backgroundColor = "white";
     charter.style.borderRadius = "3rem";
-    charter.style.padding = "3rem";
-    charter.style.margin = "3rem";
+    charter.style.padding = "0.5rem";
+    charter.style.margin = "0.5rem";
 
     myChart = new Chart(charter, config);
 };
